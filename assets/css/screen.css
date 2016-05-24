@@ -383,7 +383,7 @@ strong, b {
 }
 .card--actions {
   padding: 8px;
-  display: flex;
+  display: flex center;
   flex-flow: row nowrap;
   border-top: 1px solid rgba(160,160,160,0.2)
 }
