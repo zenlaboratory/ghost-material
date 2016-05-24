@@ -80,15 +80,15 @@
     {{#if image}}
       <article class="material-card slide image" role="article">
       <!-- Header -->
-      <header class="material-card--header bg-darken">
+      <header class="card--header bg-darken">
     {{else}}
       <article class="material-card slide" role="article">
       <!-- Header -->
-      <header class="material-card--header">
+      <header class="card--header">
     {{/if}}
         <!-- Title -->
-        <h5 class="material-card--title" itemprop="headline">{{title}}</h5>
-        <span class="material-card--subtitle">
+        <h5 class="card--title" itemprop="headline">{{title}}</h5>
+        <span class="card--subtitle">
           <i class="fa fa-calendar-o"></i>
           <time datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">
             {{date format='DD MMM YYYY'}}
@@ -98,13 +98,13 @@
         {{#if image}}<img class="bg-image" src="{{image}}" />{{/if}}
       </header>
       <!-- Content -->
-      <section class="material-card--main">
-        <summary class="material-card--content" itemprop="articleBody">
+      <section class="card--main">
+        <summary class="card--content" itemprop="articleBody">
           {{excerpt words="50"}}&hellip;
         </summary>
       </section>
       <!-- Actions -->
-      <footer class="material-card--actions right">
+      <footer class="card--actions right">
         <a class="button ripple" href="{{url}}">More</a>
       </footer>
     </article>
